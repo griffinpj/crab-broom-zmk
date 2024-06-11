@@ -5,6 +5,11 @@
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/34.h"
 
+#define BASE 0
+#define RIGHT 1
+#define LEFT 2
+#define SYS 3
+
 /* Timeless homerow mods */
 
 // https://github.com/urob/zmk-config/tree/main#timeless-homerow-mods
@@ -43,7 +48,7 @@ ZMK_LAYER(base,
     //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
         &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
     //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                        &kp BSPC   &lt 2 ENTER    &lt 1 SPACE  &kp TAB
+                                       &kp BSPC  &lt LEFT ENTER &lt RIGHT SPACE  &kp TAB
     //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 )
         
