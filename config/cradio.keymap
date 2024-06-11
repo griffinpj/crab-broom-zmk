@@ -30,10 +30,6 @@ ZMK_HOLD_TAP(hmr,
     bindings = <&kp>, <&kp>;
 )
 
-// Home row mods macro
-#define HRML(k1,k2,k3,k4) &hml LSHFT k1  &hml LALT k2  &hml LCTRL k3  &hml LGUI k4
-#define HRMR(k1,k2,k3,k4) &hmr RGUI k1  &hmr RCTRL k2  &hmr RALT k3  &hmr RSHFT k4
-
 ZMK_CONDITIONAL_LAYER(LEFT RIGHT, SYS)  // LEFT + RIGHT --> SYS
 
 ZMK_LAYER(base,
@@ -42,7 +38,7 @@ ZMK_LAYER(base,
         &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
     //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
     //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
-        HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
+    &hml LSHFT A &hml LALT S &hml LCTRL D &hml LGUI F &kp G     &kp H      &hmr RGUI J &hmr RCTRL K &hmr RALT L &hmr RSHFT SQT
     //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
     //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
         &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
