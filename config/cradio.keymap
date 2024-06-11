@@ -35,17 +35,6 @@ ZMK_HOLD_TAP(hmr,
 #define HRMR(k1,k2,k3,k4) &hmr RGUI k1  &hmr RCTRL k2  &hmr RALT k3  &hmr RSHFT k4
 
 / {
-    behaviors {
-        ht: hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            bindings = <&kp>, <&kp>;
-        };
-    };
-
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
