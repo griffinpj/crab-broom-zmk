@@ -195,7 +195,7 @@
                     &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp 1      &kp 2      &kp 3      &kp P
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                 //│  A       │  S       │  D       │  F       │  G       │   │  H       │  4       │  5       │  6       │ ' "      │
-                    &kp A       &kp S      &kp D      &kp  F     &kp G       &kp H    &hmr RGUI 4 &hmr RCTRL 5 &hmr RALT 6 &hmsr RSHFT SQT
+                    &kp A       &kp S      &kp D      &kp  F     &kp G       &kp H    	HRMR(J,         K,        L,         SQT)
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                 //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  9       │ 8        │ 7        │ 0   f     │
                     &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp 9      &kp 8      &kp 7      &kp 0
